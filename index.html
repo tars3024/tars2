@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tars.ai - Your AI Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Tars.ai Logo">
+    </div>
+    <div class="hero-content">
+      <h1>Tars.ai</h1>
+      <p>Your all-in-one AI companion for a smarter, connected future.</p>
+      <button class="cta-button" onclick="displayUpdateMessage()">Learn What's Coming</button>
+    </div>
+  </header>
+  <main>
+    <section class="features">
+      <h2>Unlock the Power of AI</h2>
+      <div class="feature-grid">
+        <div class="feature-card" onclick="showFeatureInfo('Personalized Insights', 'AI tailored to your needs, delivering recommendations just for you.')">
+          <h3><i class="icon-analytics"></i> Personalized Insights</h3>
+          <p>AI tailored to your needs.</p>
+        </div>
+        <div class="feature-card" onclick="showFeatureInfo('Effortless Automation', 'Automate repetitive tasks and focus on what truly matters.')">
+          <h3><i class="icon-robot"></i> Effortless Automation</h3>
+          <p>Automate your tasks.</p>
+        </div>
+        <div class="feature-card" onclick="showFeatureInfo('Real-Time Intelligence', 'Analyze and act on real-time data to stay ahead of the curve.')">
+          <h3><i class="icon-data"></i> Real-Time Intelligence</h3>
+          <p>Analyze data effortlessly.</p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Join the Future of Intelligence</h2>
+      <p>Explore how Tars.ai can redefine productivity for you.</p>
+      <button class="cta-button" onclick="displayUpdateMessage()">Get Started</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Tars.ai. Designed for a smarter tomorrow.</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Welcome to Tars.ai</h2>
+      <p id="modal-text">Tars.ai is in its early stages. Exciting updates are on the way, so stay tuned!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
